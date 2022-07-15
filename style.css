@@ -1,0 +1,131 @@
+body {
+  font-size: 16px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  text-align: center;
+  margin: 0% 10%;
+}
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "menu header header header header logo"
+    "menu main main main main right"
+    "menu main main main main right";
+  gap: 2px;
+  padding: 3px;
+  grid-template-rows: 7% 93%;
+}
+.item-1 {
+  grid-area: header;
+  font-family: sofia;
+  font-size: xx-large;
+}
+.item-2 {
+  grid-area: logo;
+}
+img {
+  width: 500px;
+  height: 500px;
+}
+.image {
+  width: 200px;
+  height: 200px;
+}
+
+.item-3 {
+  grid-area: menu;
+  width: 15px;
+}
+
+.item-4 {
+  grid-area: main;
+}
+.item-5 {
+  grid-area: right;
+}
+
+.grid-item {
+  background-color: rgb(248, 241, 243);
+  text-align: center;
+}
+
+.font-20 {
+  font-size: 20px;
+}
+table,
+th,
+td {
+  border: 1px solid aqua;
+  width: 50%;
+  height: 100px;
+  text-align: left;
+  border-collapse: collapse;
+}
+tr:nth-child(even),
+.background-aqua {
+  background-color: aqua;
+}
+
+.th {
+  font-weight: bold;
+  text-align: center;
+}
+.rcorners {
+  border-radius: 0px 30px 30px 0px;
+  padding: 20px;
+  width: 50%;
+  height: 20px;
+}
+.textalign-left {
+  text-align: left;
+}
+.display-flex {
+  display: flex;
+  align-items: center;
+}
+.display-flexend {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.button {
+  border: solid black;
+  padding: 15px 40px;
+  text-align: center;
+}
+@media screen and (max-width: 1000px) {
+  .button {
+    width: 150px;
+    border: solid black;
+    text-align: center;
+  }
+  .item-3 {
+    grid-area: menu;
+    width: 0px;
+  }
+  h2 {
+    font-size: 15px;
+  }
+  .display-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .grid-container {
+    display: block;
+  }
+  img {
+    width: 150px;
+    height: 150px;
+  }
+  body {
+    font-size: 11px;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    text-align: center;
+    margin: 0% 5%;
+  }
+  h1 {
+    font-size: 17px;
+  }
+}
